@@ -44,7 +44,7 @@ public class BootstrapData implements CommandLineRunner {
         authorRepository.save(rod);
         rod.getBooks().add(noEJB);
         noEJB.getAuthors().add(rod);
-        noEJB.setPubsher(publisher);
+        noEJB.setPublisher(publisher);
         bookRepository.save(noEJB);
         //let publisher know about a new book it publishes
         publisher.getBooks().add(noEJB);
